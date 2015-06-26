@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.davidkopala.ozoneconversion.Main">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title01"
+        android:text="Title01"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input01"
+        android:layout_below="@id/title01" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title02"
+        android:text="Title02"
+        android:layout_below="@id/input01"
+        android:layout_marginTop="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input02"
+        android:layout_below="@id/title02" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:layout_below="@id/input02"
+        android:layout_alignParentRight="true"
+        android:id="@+id/submitButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_alignParentBottom="true"
+        android:textSize="100sp"
+        android:text="Result"
+        android:id="@+id/result" />
+
+</RelativeLayout>
